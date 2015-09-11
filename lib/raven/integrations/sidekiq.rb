@@ -6,7 +6,7 @@ module Raven
     def call(_worker, msg, _queue)
       started_at = Time.now
       yield
-    rescue Exception => ex
+    rescue StandardError => ex
       Raven.capture_exception(ex, :extra => { :sidekiq => msg },
                                   :time_spent => Time.now-started_at)
       raise

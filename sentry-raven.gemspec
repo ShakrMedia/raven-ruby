@@ -2,14 +2,14 @@ $:.unshift File.expand_path('../lib', __FILE__)
 require 'raven/version'
 
 Gem::Specification.new do |gem|
-  gem.name = "sentry-raven"
+  gem.name = "sentry-raven-kiq"
   gem.version = Raven::VERSION
   gem.executables << "raven"
   gem.platform = Gem::Platform::RUBY
   gem.description = gem.summary = "A gem that provides a client interface for the Sentry error logger"
-  gem.email = "getsentry@googlegroups.com"
-  gem.homepage = "http://github.com/getsentry/raven-ruby"
-  gem.authors = ["Sentry Team"]
+  gem.email = "minku@sha.kr"
+  gem.homepage = "http://github.com/shakrmedia/raven-ruby"
+  gem.authors = ["Minku Lee"]
   gem.has_rdoc = true
   gem.extra_rdoc_files = ["README.md", "LICENSE"]
   gem.files = Dir['lib/**/*']

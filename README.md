@@ -5,6 +5,10 @@
 
 A client and integration layer for the [Sentry](https://github.com/getsentry/sentry) error reporting API.
 
+## What's different from original gem?
+
+This variant of raven-ruby gem modifies Sidekiq integration to rescue from StandardError instead of Exception.
+
 ## Requirements
 
 We test on Ruby MRI 1.8.7/REE, 1.9.3, 2.0, 2.1 and 2.2. JRuby support is experimental - check TravisCI to see if the build is passing or failing.
